@@ -8,7 +8,10 @@ namespace New_Recipe_API.Repositories
         private List<User> _users = new List<User>();
         private int _nextId;
 
-        public UserRepository(bool includeData = true)
+
+        public bool includeData = true;
+
+        public UserRepository()
         {
             if (includeData)
             {
