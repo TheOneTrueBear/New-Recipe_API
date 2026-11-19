@@ -13,9 +13,9 @@ namespace New_Recipe_API.Service
             {
                 List<User> users = new List<User>()
                 {
-                    new User("admin", ""),
+                    new User("admin", "1234"),
 
-                    new User("user", "")
+                    new User("user", "user1234")
                 };
 
                 context.Add(users);

@@ -17,14 +17,12 @@ namespace New_Recipe_API.Controllers
             _repo = repo;
         }
 
-        [EnableCors("AllowAll")]
         [HttpGet]
         public IEnumerable<Recipe> GetRecipes([FromQuery] string? tag = null)
         {
             return _repo.GetAll(tag);
         }
 
-        [EnableCors("AllowAll")]
         [HttpGet("{id}")]
         public Recipe GetRecipeById(int id)
         {
