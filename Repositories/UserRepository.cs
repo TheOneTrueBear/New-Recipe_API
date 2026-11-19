@@ -15,8 +15,8 @@ namespace New_Recipe_API.Repositories
         {
             if (includeData)
             {
-                Add(new User("admin", "admin1234"));
-                Add(new User("Joachim", "Joachim525672"));
+                Add(new User("admin", "admin1234", "admin"));
+                Add(new User("Joachim", "Joachim525672", "LoggedIn"));
                 Add(new User("Adam", "gr212fdwe"));
             }
         }

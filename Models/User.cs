@@ -5,9 +5,9 @@
         public int Id { get; set; }
         public string UserName { get; set; }
         public string Password { get; set; }
-        public string Role { get; set; }
+        public string? Role { get; set; }
 
-        public User(string userName, string password, string role)
+        public User(string userName, string password, string? role = null)
         {
             UserName = userName;
             Password = password;
